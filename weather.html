@@ -9,10 +9,11 @@
      <meta name="description" content="Sam Lesem's first website">
      <meta name="keywords" content="First Website, Sam Lesem, Samuel Lesem, Lesem">
      <meta name="author" content="Sam Lesem">
-     <link rel="stylesheet" type="text/css" href="css/styles.css">
      <script type="text/javascript" src="js/jquery.min.js"></script>
      <script type="text/javascript" src="weatherApp.js"> </script>
      <!--<link href="css/bootstrap.css" rel="stylesheet" media="screen">-->
+     <link rel="stylesheet" href="fontAwesome/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="styles.css">
      <script>
 
      </script>
@@ -20,18 +21,20 @@
 
 <body>
 
-    <nav> 
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="weather.html">Weather or Not</a></li>
+    <nav>    
+        <ul class="topNav" id="myTopnav">
+            <li><a href="#me">About Me</a></li>
+            <li><a href="weather.html">Weather App</a></li>
+            <li class="icons"><a href="https://www.linkedin.com/in/samuel-lesem-a355786a"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li class="icons"><a href="#"><i class="fa fa-lg fa-google-plus"></i></a></li>
         </ul>
-
-    </nav>    
+    </nav>
 
    <!-- <button id = "getIt" onclick = "gettingJSON()">Get JSON</button> -->
     <h2>Weather Application in JavaScript</h2>
+
     <div id='weather'>
-        <form>
+        <form id="cityInput">
             Enter City Name:
             <input id="cityName" type="text">
         </form>

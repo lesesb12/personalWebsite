@@ -3,6 +3,32 @@ body {
 	font-family: courier;  
 
 }
+ul.topNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li{
+    float: left;
+}
+li.icons{
+	float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
 
 #primaryHeader{
 	height: auto;
@@ -27,35 +53,20 @@ body {
 	position: absolute;
 	margin: 10px 150px 100px 150px;
 }
+background-color: #555;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens 
+ul.topnav li.icon {
+	display: none;
+}*/
+
 table{
+	background-color: green;
 	text-align: center;
 	width: 100%;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
 h1 {
 	text-align: center;
 }
@@ -70,4 +81,12 @@ table tr td img {
 
 	background-color: blue;
 	text-align: center;
+	padding-top: 20px;
 }
+#cityInput{
+	padding-bottom: 10px;
+}
+
+
+/* removes Brand space from navbar */
+
