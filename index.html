@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+
+   <head>
+     <title>My First Website</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Sam Lesem's first website">
+     <meta name="keywords" content="First Website, Sam Lesem, Samuel Lesem, Lesem">
+     <meta name="author" content="Sam Lesem">
+     <link rel="stylesheet" type="text/css" href="css/styles.css">
+     <!--<link href="css/bootstrap.css" rel="stylesheet" media="screen">-->
+
+   </head>
+
+    <body>
+    <nav> 
+        <ul>
+            <li><a href="#me">About Me</a></li>
+            <li><a href="page2.html">Book Clubbin</a></li>
+            <li><a href="page3.html">Weather or Not</a></li>
+        </ul>
+
+    </nav>  
+
+    <div id="primaryHeader">
+        <img id="oasis" src="pictures/oasis.jpg">
+        <h2 id="hiSam">Hi, I'm Samuel</h2>
+    </div>    
+
+    <div id="me">
+            <p>I am creating this website in hopes of teaching myself front end web developement.  I am
+             a senior at Wake Forest University and am graduating this fall.  I am pursuing a full time job
+              in either web developemnt or data analytics.</p>
+    </div>
+        
+
+  
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <script>
+        $(document).ready(function(){
+            $('#me').hide(300).show(1000);
+        });
+    </script>
+
+    </body>
+
+<footer>
+
+</footer>
+</html>
