@@ -50,16 +50,15 @@ li a:hover {
 }
 
 #me{
-	position: absolute;
-	margin: 10px 150px 100px 150px;
-}
-background-color: #555;
+	margin: 50px 150px 50px 150px;
 }
 
-/* Hide the list item that contains the link that should open and close the topnav on small screens 
-ul.topnav li.icon {
-	display: none;
-}*/
+#resume{
+	margin-top: 0px;
+	margin-bottom: 100px;
+	border-color: aqua;
+}
+
 
 table{
 	background-color: green;
@@ -85,6 +84,10 @@ table tr td img {
 }
 #cityInput{
 	padding-bottom: 10px;
+}
+
+#mapid { 
+	height: 180px; 
 }
 
 

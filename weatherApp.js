@@ -2,15 +2,13 @@ var api_key = '8fb0eed6b05b1cc6ada64305212f246b';
 var weather_Indy = 'http://api.openweathermap.org/data/2.5/weather?zip=46256,us&appid=8fb0eed6b05b1cc6ada64305212f246b&units=imperial';
 var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?';
 var forecastUrl = 'http://api.openweathermap.org/data/2.5/forecast/daily?';
+var googleMapKey = 'AIzaSyBxWLSmXIBvdADp0okbNDM7E-9c8GNS2qw';
 //var city = 'Indianapolis';
 
-
-//$('#todayDate').text(month + "/" + day + "/" + year);
-
-
 $(document).ready(function(){
-
+	
 	$('#getWeather').click(function(){
+		//current weather URL get data
 		$.ajax({
 			url: weatherUrl,
 			data:{
@@ -22,8 +20,12 @@ $(document).ready(function(){
 				$('#showTemp').text(result.main.temp);
 				$('#showConditions').text(result.weather[0].description);
 				$('#showWind').text(result.wind.speed);
+
+
 			}
 		});
+
+		//Forecast URL get data
 		$.ajax({
 			url: forecastUrl,
 			data:{
@@ -46,10 +48,6 @@ $(document).ready(function(){
 					day[i] = currentTime.getDate(result.list[i].dt);
 					year[i] = currentTime.getFullYear(result.list[i].dt);	
 				}
-
-				//JSON like array... loop through the json array []
-				//list.main[].temp?
-				//idea 2: load forecast into array then print array instead of going directly through jQuery object
 				$('#dayOne').text(month[0] + '/' + day[0] + '/' + year[0]);
 				$('#dayTwo').text(month[1] + '/' + day[1] + '/' + year[1]);
 				$('#dayThree').text(month[2] + '/' + day[2] + '/' + year[2]);
@@ -60,11 +58,13 @@ $(document).ready(function(){
 				$('#dayThreeTemp').text(result.list[2].temp.max);
 				$('#dayFourTemp').text(result.list[3].temp.max);
 				$('#dayFiveTemp').text(result.list[4].temp.max);
-
-				
 			} //FUNCTION to loop through the data
 		});
-
 	});
 
+
 });
+
+
+
+
